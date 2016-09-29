@@ -1,6 +1,6 @@
 {
   "name": "Fastquantile",
-  "tagline": "Implementation of the paper: A  Fast Algorithm for Approximate Quantiles in High Speed Data Streams",
-  "body": "# fastQuantile\r\nImplementation of the paper: A  Fast Algorithm for Approximate Quantiles in High Speed Data Streams.\r\n\r\nThe data structure helps estimate quantile function up to eps accuracy. If we're interested in quantile with precision up to 1%, eps can be set as 0.01.\r\n\r\n\r\nSpace complexity is O(log(eps*n)^2/eps), growing as O(log(n)^2), where n is the current array size.\r\n\r\n\r\nTime complexity. Each update operation (for any new incoming data) takes O(log(log(eps*n)/eps)) time, which is almost negligible.\r\n\r\nDemos and tests can be found in fastQ.cpp.",
+  "tagline": "Fast Quantile Approximator in High Speed Data Streams",
+  "body": "# fastQuantile\r\n\r\nThe C++ class CSummary in fastQ.hpp implements the paper A Fast Algorithm for Approximate Quantiles in High Speed Data Streams (Qi Zhang and Wei Wang 2007).\r\n\r\nThe data structure helps estimate quantile function up to eps accuracy. If we're interested in quantile with precision up to 1%, eps can be set as 0.01. For fixed eps, such as eps=0.01, the space and time complexity are\r\n|Space complexity| Time complexity for updating the class | Time complexity for query |\r\n| -- | -- | --|\r\n\r\n\r\nSpace complexity is O(log(eps*n)^2/eps), growing as O(log(n)^2), where n is the current array size.\r\n\r\n\r\nTime complexity. Each update operation (for any new incoming data) takes O(log(log(eps*n)/eps)) time, which is almost negligible.\r\n\r\nDemos and tests can be found in fastQ.cpp.",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
