@@ -1,4 +1,4 @@
-/* Copyright 2016 Jian Ge*/
+/* Copyright 2016 Jason Ge*/
 /* Implementation of the paper */
 /* A Fast Algorithm for Approximate Quantiles in High Speed Data Streams*/
 /* for answering quantile query with error bounded by eps.*/
